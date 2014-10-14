@@ -1,8 +1,8 @@
 A research Proposal for the Collaborative Research Course
-
+=========================================================
 Benjamin Snow and Oliver Bott
 
-Introduction
+###Introduction
 
 
 
@@ -37,4 +37,9 @@ d.	Financial
 Goal: Measure Innovation in 'CME vs LME' framekwork to examine effect of ‘variety of capitalism’ on innovation level and type.
 
 Research Question:
-Does institutional framework (Coordinated vs Liberal Market Economy) effect Innovation Level and type
+**Does institutional framework (Coordinated vs Liberal Market Economy) effect Innovation Level and type**
+
+### Theoretical background
+
+Some words on VoC
+Explanation of CME and LME differences
