@@ -43,5 +43,21 @@ Research Question:
 
 ### Theoretical background
 
-Some words on VoC
-Explanation of CME and LME differences
+##Varieties of Capitalism
+
+Goes beyond hitherto dominant theories of Modernization, Neo-corporatism and social systems of production.
+VoC moves big firms and strategic actors into centre. Hall and Soskice (2001) hence used an actor-centred approach.
+The success of firms depends on their ability to coordinate effectively with a wide range of actors in different spheres, i.e. the industrial relations system, the education and vocational training system, the corporate governance system and the system of corporate financing.
+
+Firms utilize a given institutional framework strategically and thereby keep it in equilibrium.
+Institutions are defined as set of rules, formal or informal, that actors generally follow - hence markets are also seen as institutions.
+
+##Explanation of CME and LME differences
+The VoC framework distinguishes between two types of economies, i.e. liberal market economies (LMEs) and coordinated market economies (CMEs).
+
+In LMEs, where coordination relies mainly on market mechanisms, the relation between demand supply resolve coordination problems. Firms are attentive to current earnings and the price of their shares on equity markets. Industrial relations are organized through unilateral control coming from top down management. Market competition affects wages and inflation. The education and training system focuses on general skills than can be used flexibly. Economic acitivity is highest in the service sector. LMEs are also characterized by strong antitrust laws. Technology transfer happens mostly through the mobility of employees. Example countries as identified by Hall and Soskice (2001) are the USA, UK, Australia, Canada, New Zealand and Ireland.
+CMEs, in contrast, rely on strategic interaction between firms, thereby keeping the system in equilibrium. In the financial system, investment is usually encouraged through the sharing of informal information between firms and associations, reputation and trust play a crucial role here. In top management, decision making is based on multilateral action. The industrial relations system is characterised through industry-level bargains. The education and training system depends on high industry-specific knowledge, which is why CMEs tend to produce elaborate vocational training systems. In inter-company relations, firms tend to undertake joint research, in which cooperation is common.
+Examples for CMEs are Germany, Japan, Switzerland, the Netherlands, Sweden, Norway, Denmark, Finland and Austria.
+
+In short, the VoC theory claims that the level of coordination within a certain polity, enabled by the particular institutional setting, determines whether countries tend to produce different types of innovation. CMEs, according to VoC theory, are better at producing incremental innovation in manufacturing, while LMEs tend to produce radical innovation in the service sector.
+Taylor, 2009, p.224: "At its most basic level, it is a theory of capitalism by gradation: some countries use markets more than others to cooridnate eocnomic actors this variation is used to explain a myriad of comparative and international political-economic behavior."
