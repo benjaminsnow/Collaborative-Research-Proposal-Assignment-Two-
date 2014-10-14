@@ -7,6 +7,7 @@ Industrial relations system
 Education and training systems
 System governing intercompany relations
 System of company financing and corporate governance
+
 (Capser et al. p. 204) 
 a.	Labour law. – find proxy variable
 b.	Company law – find proxy variable
