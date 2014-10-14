@@ -11,14 +11,14 @@ Looking at institutional setting to examine different types and levels of innova
 
 Steps to undergo:
 
-1.	 Taking available (15) countries and their innovation data
+1.Taking available (15) countries and their innovation data
 
-	Incremental vs radical innovation – we have a proxie variable for high tech innovation
+Incremental vs radical innovation – we have a proxie variable for high tech innovation
 or 
 Some other variable which we use to reflect either the presence of innovation, or type of innovation (incremental vs. radical).
 
 
-2.	Tag them into some sort of ‘CME vs LME’  (0 to 1 variable, or 1-4 with some threshold, or use each individual component)
+2. Tag them into some sort of ‘CME vs LME’  (0 to 1 variable, or 1-4 with some threshold, or use each individual component)
 (Soskice 2002?)
 - Industrial relations system  - find proxie
 - Education and training systems - find proxie
