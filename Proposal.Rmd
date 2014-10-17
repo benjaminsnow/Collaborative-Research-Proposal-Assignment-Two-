@@ -62,3 +62,33 @@ Examples for CMEs are Germany, Japan, Switzerland, the Netherlands, Sweden, Norw
 ##VoC and innovation
 The VoC theory claims that the level of coordination within a certain polity, enabled by the particular institutional setting, determines whether countries tend to produce certain types of innovation. Soskice (1999) argued that the particular production system evolving through a given institutional framework determines the "comparative institutoinal advantage" of an economy, a theory closely related to that of VoC. Soksice (1999) argues that the coordinating capacity of businesses influences the feasibility of different production regimes. CMEs, according to Soskice (1999, p.106), "permit industry-defined unions, technology transfer and diffusion within the industry, technical norm setting within the industry, as well as training of engineers and other high-level specalists within an industry technology framework, and industry-based developments of vocational training standards". It follows that CMEs have a comparative institutional advantage in incremental innovation particularly in manufacturing. LMEs, in contrast, build on market deregulation and favor shorter-term and more competitive relations. Accordingly, LMEs have an advantage in producing radical innovation particularly in the service sector.
 
+
+## Methodology
+
+Here is a quick overview of how to load data into R. 
+
+*Load data from user folder*
+
+OECD_Cities_Pat <- read.csv("Data/OECD_Cities_Pat.csv")
+
+OECD_Cities_Pop <- read.csv("Data/OECD_Cities_Pop.csv")
+
+Destatis_Pat <- read.csv("Data/Destatis_Pat.csv")
+
+Destatis_Pat_Simple2 <- read.csv("Data/Destatis_Pat_Simple2.csv")
+
+
+*Load data from web*
+
+Patent_data <- read.csv('http://vincentarelbundock.github.io/Rdatasets/csv/Ecdat/PatentsHGH.csv')
+
+
+*Load patent data from Worldbank*
+
+install.packages("WDI")
+
+library(WDI)
+
+Patents_WB <- WDI(indicator = 'SP.POP.SCIE.RD.P6')
+
+So far we´ve had problems creating a direct link to the OECD statistics database. We still need to figure this out.
