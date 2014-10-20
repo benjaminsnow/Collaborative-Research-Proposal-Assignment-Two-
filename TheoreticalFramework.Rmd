@@ -25,6 +25,7 @@ New quality of networking enabled through new technology and software.
 
 Exploration of relationship between patent and network data.
 (Currently networks are mainly analyzed by looking into paper citations, researchers' mobility).
+Innovation does not necessarily take place in firms, outcome not protected but accessible.
 Interesting questions: What is their relationship? What are the differences? Is there a potential lag between the two?
 
 ## Research question
