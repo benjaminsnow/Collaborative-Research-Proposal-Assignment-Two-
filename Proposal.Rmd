@@ -91,4 +91,15 @@ library(WDI)
 
 Patents_WB <- WDI(indicator = 'SP.POP.SCIE.RD.P6')
 
-So far we´ve had problems creating a direct link to the OECD statistics database. We still need to figure this out.
+*We can now pull data straight from the OECD website*
+
+install.packages("devtools")
+require("devtools")
+install_github("rsdmx", "opensdmx")
+library("rsdmx")
+
+dataURL <- "http://stats.oecd.org/restsdmx/sdmx.ashx/GetData/CITIES/DEU+DE001+DE002+DE003+DE004+DE005+DE006+DE007+DE008+DE009+DE010+DE011+DE012+DE013+DE014+DE015+DE027+DE033+DE034+DE035+DE040+DE501+DE502+DE504+DE507.PCT_INTENSITY?startTime=2000&endTime=2012"
+sdmx <- readSDMX(dataURL)
+stats <- as.data.frame(sdmx)
+
+
