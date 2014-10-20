@@ -5,26 +5,26 @@
 
 **Paragraph 1**
 
-What is innovation? Compare definitions, come up with our own general definition
-Why is it important? Importance for economic growth, societal development, overcoming of challenges
+What is innovation? Compare definitions, come up with our own general definition.
+Why is it important? Importance for economic growth, societal development, overcoming of challenges.
 
 **Paragraph 2**
 
-How is innovation measured? Range of indicators, input-throughput-output, difficult to measure
-How do we compare innovation performance? Refer to rankings, race for innovation
-At what level is it measured? Usually national but this has shortcomings, regional is more pronounced
+How is innovation measured? Range of indicators, input-throughput-output, difficult to measure.
+How do we compare innovation performance? Refer to rankings, race for innovation.
+At what level is it measured? Usually national but this has shortcomings, regional is more pronounced.
 
 **Paragraph 3**
 
-Why are patents important? Widely used and accepted as indicator
-Comparison of closed/protected vs. open knowledge
-Importance of networks for knowledge creation and sharing, complexity of current challenges, growing relevance of collaborations
-New quality of networking enabled through new technology and software
+Why are patents important? Widely used and accepted as indicator.
+Comparison of closed/protected vs. open knowledge.
+Importance of networks for knowledge creation and sharing, complexity of current challenges, growing relevance of collaborations.
+New quality of networking enabled through new technology and software.
 
 **Paragraph 4**
 
-Exploration of relationship between patent and network data
-(Currently networks are mainly analyzed by looking into paper citations, researchers' mobility)
+Exploration of relationship between patent and network data.
+(Currently networks are mainly analyzed by looking into paper citations, researchers' mobility).
 Interesting questions: What is their relationship? What are the differences? Is there a potential lag between the two?
 
 ## Research question
