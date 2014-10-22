@@ -7,7 +7,7 @@
 
 Policy makers worldwide have a profound interest in innovation for its significance for the creation of wealth and economic security. @taylor2004 views innovation as "the driving force behind modern economic growth, relative industrial power, and competitive advantage" (p.222). @schumpeter1942 greatly shaped the innovation discourse with his idea of structural change and the business cycle, the process he termed "creative destruction". Numerous studies, for example the Innovation Union Scoreboard[^IUS] and the OECD Science, Technology and Innovation Scoreboard[^STI], have attempted to measure and compare the innovation performance on the national level. However, when looking at the regional level, innovation performance can exhibit very different results. Likewise, we raise the question whether openly accessible knowledge might be a more useful indicator in today´s network-based research systems compared to protected closed knowledge. This is why this research project looks into using collaborative online network data on the city-level as an innovation indicator. By doing so, this work will critically assess current innovation indicators and aims to enhance our knowledge of innovation statistics. Since @freeman2009, among other scholars, called for the continuous improvement of innovation measurement, this work seeks to go beyond the widespread use of patent data to contribute to the refinement of innovation indicators.
 
-## Theoretical Framework
+## State of the Field
 
 **Defining Innovation**
 
