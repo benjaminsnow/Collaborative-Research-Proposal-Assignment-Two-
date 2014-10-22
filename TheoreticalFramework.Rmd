@@ -8,7 +8,7 @@
 What is innovation? Compare definitions, come up with our own general definition.
 Why is it important? Importance for economic growth, societal development, overcoming of challenges.
 
-Innovation is "the creation of something qualitatively new, via processes of learning and knowledge building. It involves changing competences and capabilities, and producing qualitatively new performance outcomes. [@smith2005, 149] @smith2005 notes that innovation is by definition hard to measure, as innovation is, by definition, novelty, thus commensurability is difficult to achieve. [@smith2005, 149]
+@smith2005 notes the difficulty of measuring innovation as it is, by definition, a novelty and thus commensurability is difficult to achieve. Still @smith2005 defines innovation as "the creation of something qualitatively new, via processes of learning and knowledge building. It involves changing competences and capabilities, and producing qualitatively new performance outcomes" [@smith2005, 149]. @frankelius2009 in his literature review of innovation studies criticized the widespread underlying assumption that innovation is limited to technological research and innovation.
 
 **Paragraph 2**
 
