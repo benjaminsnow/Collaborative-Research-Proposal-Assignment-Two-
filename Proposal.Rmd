@@ -14,7 +14,7 @@ bibliography:
     - Main.bib
 ---
 
-```{r include=FALSE}
+```{r , echo=FALSE , include=FALSE}
 # Set working directory
 setwd('https://github.com/benjaminsnow/Collaborative-Research-Proposal-Assignment-Two-/')
 
