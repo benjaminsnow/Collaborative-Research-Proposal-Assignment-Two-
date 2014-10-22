@@ -1,3 +1,32 @@
+---
+title: "Assignment 2: Research Proposal"
+author: "Oliver Bott and Benjamin Snow"
+date: "22 October 2014"
+output:
+  html_document:
+    fig_caption: yes
+    number_sections: no
+  pdf_document:
+    fig_caption: yes
+    number_sections: yes
+bibliography:
+    - Packages.bib
+    - Main.bib
+---
+
+```{r include=FALSE}
+# Set working directory
+setwd('https://github.com/benjaminsnow/Collaborative-Research-Proposal-Assignment-Two-/')
+
+# Install and load packages & create .bib BibTeX file
+install.packages("ggplot2", "repmis", "devtools", "WDI")
+require("devtools")
+install_github("rsdmx", "opensdmx")
+library("rsdmx")
+repmis::LoadandCite(PackagesUsed, file = "Packages.bib", install = FALSE)
+
+```
+
 A Research Proposal for the Collaborative Research Course
 =========================================================
 Benjamin Snow and Oliver Bott
