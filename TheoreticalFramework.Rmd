@@ -16,7 +16,7 @@ How is innovation measured? Range of indicators, input-throughput-output, diffic
 How do we compare innovation performance? Refer to rankings, race for innovation.
 At what level is it measured? Usually national but this has shortcomings, regional is more pronounced.
 
-@smith2005 notes the difficulty of measuring innovation, as it is by definition a novelty and thus commensurability is difficult to achieve. Innovation has traditionally been measure with a focus on outputs. @smith2005 mentions the development of new inputs, but focuses on country level economic measures, which are helpful for comparability. [@smith2005, 148)
+This focus on technology can partly be explained by the difficulties associated with the measurement of innovation. @smith2005 notes the difficulty of measuring innovation, as it is by definition a novelty and thus commensurability is difficult to achieve. Innovation has traditionally been measured with a focus on economic outputs. @smith2005 mentions the development of new inputs, but focuses on country level economic measures, which are helpful for comparability. [@smith2005, 148)
 
 
 
