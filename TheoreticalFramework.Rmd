@@ -5,16 +5,13 @@
 
 **Paragraph 1**
 
-What is innovation? Compare definitions, come up with our own general definition.
-Why is it important? Importance for economic growth, societal development, overcoming of challenges.
+> What is innovation? Compare definitions, come up with our own general definition. Why is it important? Importance for economic growth, societal development, overcoming of challenges.
 
-Students of public policy and economics have been interested in the idea of innovation for its importance for wealth creation and economic security. @taylor2004 views innovation as "the driving force behind modern economic growth, relative industrial power, and competitive advantage" (p.222). @schumpeter1942 greatly shaped the innovation discourse with his idea of structural change and the business cycle, the process that he termed "creative destruction". @schumpeter1942 in his rather broad definition saw innovation as "a process of industrial mutation, that incessantly revolutionizes the economic structure from within, incessantly destroying the ld one, incessantly creating a new one". @smith2005 defined innovation as "the creation of something qualitatively new, via processes of learning and knowledge building. It involves changing competences and capabilities, and producing qualitatively new performance outcomes" [@smith2005, 149]. Although it has been accepted that innovation can take many forms, e.g. product, process, marketing and proccess innovations, @frankelius2009 in his extensive literature review of innovation studies criticized the widespread underlying assumption that innovation is limited to technological innovation.
+Students of public policy and economics have been interested in innovation for its significance for wealth creation and economic security. @taylor2004 views innovation as "the driving force behind modern economic growth, relative industrial power, and competitive advantage" (p.222). @schumpeter1942 greatly shaped the innovation discourse with his idea of structural change and the business cycle, the process that he termed "creative destruction". Using a rather broad view, @schumpeter1942 saw innovation as "a process of industrial mutation, that incessantly revolutionizes the economic structure from within, incessantly destroying the old one, incessantly creating a new one". On a more nuanced take, @smith2005 defined innovation as "the creation of something qualitatively new, via processes of learning and knowledge building. It involves changing competences and capabilities, and producing qualitatively new performance outcomes" [@smith2005, 149]. Although it has been accepted that innovation can take many forms, e.g. product, process, marketing and proccess innovations, @frankelius2009 in his extensive literature review of innovation studies criticized the widespread underlying assumption that innovation is limited to technological innovation.
 
 **Paragraph 2**
 
-How is innovation measured? Range of indicators, input-throughput-output, difficult to measure.
-How do we compare innovation performance? Refer to rankings, race for innovation.
-At what level is it measured? Usually national but this has shortcomings, regional is more pronounced.
+> How is innovation measured? Range of indicators, input-throughput-output, difficult to measure. How do we compare innovation performance? Refer to rankings, race for innovation. At what level is it measured? Usually national but this has shortcomings, regional is more pronounced.
 
 This focus on technology can partly be explained by the difficulties associated with the measurement of innovation. @smith2005 notes the difficulty of measuring innovation, as it is by definition a novelty and thus commensurability is difficult to achieve. Innovation has traditionally been measured with a focus on economic outputs. @smith2005 mentions the development of new inputs, but focuses on country level economic measures, which are helpful for comparability. [@smith2005, 148)
 
@@ -22,10 +19,7 @@ This focus on technology can partly be explained by the difficulties associated 
 
 **Paragraph 3**
 
-Why are patents important? Widely used and accepted as indicator.
-Comparison of closed/protected vs. open knowledge.
-Importance of networks for knowledge creation and sharing, complexity of current challenges, growing relevance of collaborations.
-New quality of networking enabled through new technology and software.
+> Why are patents important? Widely used and accepted as indicator. Comparison of closed/protected vs. open knowledge. Importance of networks for knowledge creation and sharing, complexity of current challenges, growing relevance of collaborations. New quality of networking enabled through new technology and software.
 
 A patent is a "temporary legal monopoly granted by the government to an inventor for the commerical use of his or her invention [@taylor2004, 229). @taylor2004 goes on to describe the patent as a property right awarded when an invention is shown to be non-trivial, useful, and novel [@taylor2004, 230]. Patents were first used to measure demand-side determinants of innovation by Scherer and Schmookler, and have been used in the analysis of innovation activity for over three decades [@taylor2004, 230). While long hindered by technological limitations requiring labor intensive patent analysis, recent improvements due to machine-readable patent data have spurred recent econometric analysis, mostly recently by @hall2005, who analyzed millions of patents. However, patents due have limitations, including classifican problems.  
 
@@ -35,10 +29,7 @@ However, both patents and academic publishing include only proprietary or closed
 
 **Paragraph 4**
 
-Exploration of relationship between patent and network data.
-(Currently networks are mainly analyzed by looking into paper citations, researchers' mobility).
-Innovation does not necessarily take place in firms, outcome not protected but accessible.
-Interesting questions: What is their relationship? What are the differences? Is there a potential lag between the two?
+> Exploration of relationship between patent and network data. (Currently networks are mainly analyzed by looking into paper citations, researchers' mobility). Innovation does not necessarily take place in firms, outcome not protected but accessible. Interesting questions: What is their relationship? What are the differences? Is there a potential lag between the two?
 
 The purpose of this study is to explore the conceptual and statistical viability of a new metric by which we can measure innovation. New metrics are needed, because "too much energy has gone into squeezing the last bit of juice out of old data collected for different purposes relative to the design of new types of data" (Kenneth Arrow, quoted from Smith 2005, p. 148). 
 
