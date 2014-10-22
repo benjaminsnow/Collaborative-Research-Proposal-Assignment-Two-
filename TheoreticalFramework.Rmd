@@ -8,7 +8,7 @@
 What is innovation? Compare definitions, come up with our own general definition.
 Why is it important? Importance for economic growth, societal development, overcoming of challenges.
 
-@smith2005 notes the difficulty of measuring innovation as it is, by definition, a novelty and thus commensurability is difficult to achieve. Still @smith2005 defines innovation as "the creation of something qualitatively new, via processes of learning and knowledge building. It involves changing competences and capabilities, and producing qualitatively new performance outcomes" [@smith2005, 149]. @frankelius2009 in his literature review of innovation studies criticized the widespread underlying assumption that innovation is limited to technological research and innovation.
+Students of public policy and economics have been interested in the idea of innovation for its importance for wealth creation and economic security. @taylor2004 views innovation as "the driving force behind modern economic growth, relative industrial power, and competitive advantage" (p.222). @schumpeter1934 greatly shaped the innovation discourse with his idea of structural change and the business cycle, the process that he termed "creative destruction". @smith2005 defines innovation as "the creation of something qualitatively new, via processes of learning and knowledge building. It involves changing competences and capabilities, and producing qualitatively new performance outcomes" [@smith2005, 149]. Although it has been accepted that innovation can take many forms, e.g. product, process, marketing and proccess innovations, @frankelius2009 in his extensive literature review of innovation studies criticized the widespread underlying assumption that innovation is limited to technological innovation.
 
 **Paragraph 2**
 
@@ -16,7 +16,7 @@ How is innovation measured? Range of indicators, input-throughput-output, diffic
 How do we compare innovation performance? Refer to rankings, race for innovation.
 At what level is it measured? Usually national but this has shortcomings, regional is more pronounced.
 
-Innovation has traditionally been measure with a focus on outputs. @smith2005 mentions the development of new inputs, but focuses on country level economic measures, which are helpful for comparability. [@smith2005, 148)
+@smith2005 notes the difficulty of measuring innovation, as it is by definition a novelty and thus commensurability is difficult to achieve. Innovation has traditionally been measure with a focus on outputs. @smith2005 mentions the development of new inputs, but focuses on country level economic measures, which are helpful for comparability. [@smith2005, 148)
 
 
 
