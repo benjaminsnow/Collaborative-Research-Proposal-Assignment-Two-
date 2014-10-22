@@ -16,10 +16,10 @@ bibliography:
 
 ```{r , echo=FALSE , include=FALSE}
 # Set working directory
-setwd('https://github.com/benjaminsnow/Collaborative-Research-Proposal-Assignment-Two-/')
+setwd('https://github.com/benjaminsnow/Collaborative-Research-Proposal-Assignment-Two-.git/')
 
 # Install and load packages & create .bib BibTeX file
-install.packages("ggplot2", "repmis", "devtools", "WDI")
+install.packages("ggplot2", "repmis", "devtools")
 require("devtools")
 install_github("rsdmx", "opensdmx")
 library("rsdmx")
