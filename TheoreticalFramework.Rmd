@@ -51,6 +51,8 @@ For examining open network data against patent data, this study uses patent at t
 
 This OECD data's format is in ( ).  To clean this data for effective statistical comparison, the deletion of several empty rows, and the renaming of relevant variables with their city name rather than an attributed code, for clarity.  Past this, all datasets must be effectively merged.
 
+To examine open data innovation, data was obtained from the Application Programming Interface (commonly known as an API) of the git repository web-based hosting service Github (Github.com). Github's use of distributed revision control and source code management make it a commonly used software development collaboration tool. The ability to see 
+
 
 **Preliminary Statistics**
 
