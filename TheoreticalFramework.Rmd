@@ -13,7 +13,7 @@ This research project examines the potential preferability of using collaborativ
 
 **Defining Innovation**
 
-Using a rather grand view in his understanding of innovation, @schumpeter1942 saw innovation as "a process of industrial mutation, that incessantly revolutionizes the economic structure from within, incessantly destroying the old one, incessantly creating a new one". On a more nuanced take, @smith2005 defined innovation as "the creation of something qualitatively new, via processes of learning and knowledge building. It involves changing competences and capabilities, and producing qualitatively new performance outcomes" [@smith2005, 149]. Although it has been accepted that innovation can take many forms, e.g. product, process, marketing and proccess innovations, @frankelius2009 in his extensive literature review of innovation studies criticized the widespread underlying assumption that innovation is limited to technological innovation.
+Using a rather grand view in his understanding of innovation, @schumpeter1942 sees innovation as "a process of industrial mutation, that incessantly revolutionizes the economic structure from within, incessantly destroying the old one, incessantly creating a new one". In a more understated characterization, @smith2005 defines innovation as "the creation of something qualitatively new, via processes of learning and knowledge building. It involves changing competences and capabilities, and producing qualitatively new performance outcomes" [@smith2005, 149]. While it is widely accepted that innovation can take many forms, e.g. product, process, marketing and proccess innovations, @frankelius2009, in his extensive literature review of innovation studies, criticizes the widespread underlying assumption that innovation is limited to technological innovation. While accepting @frankelius2009's critique
 
 **Measuring Innovation**
 
@@ -42,6 +42,15 @@ Similarly, for this study we will be using the association of a contributor, but
 > Exploration of relationship between patent and network data. (Currently networks are mainly analyzed by looking into paper citations, researchers' mobility). Innovation does not necessarily take place in firms, outcome not protected but accessible. Interesting questions: What is their relationship? What are the differences? Is there a potential lag between the two?
 
 Since @freeman2009 among others called for the continuous improvement of innovation measurement, this work seeks to contribute to the refinement of innovation indicators. The purpose of this study is to explore the conceptual and statistical viability of a new metric by which we can measure innovation. New metrics are needed, because "too much energy has gone into squeezing the last bit of juice out of old data collected for different purposes relative to the design of new types of data" (Kenneth Arrow, quoted from Smith 2005, p. 148).
+
+**Intended Data Sources**
+
+> Identification and sorting of intended data sources, their format, and overall plan for cleaning and analysis
+
+**Preliminary Statistics**
+
+> Early statistical analysis findings and expected types of statistical analysis based upon nature of datasets used
+
 
 ## Research question
 - Does the anlaysis of research networks function as an indicator to measure local level innovation performance?
