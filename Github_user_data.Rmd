@@ -6,11 +6,11 @@
 ########################################
 
 library(httr)
-library(dplyr)
+library(plyr)
 library(rjson)
 
 # Create locations vector
-locations <- c('Berlin', 'Brooklyn', 'London')
+locations <- c('Berlin', 'Hamburg', 'Munich', 'Stuttgart', 'Karlsruhe', 'Aachen', 'Madrid', 'Barcelona', 'Paris', 'Rome', 'Milan', 'Bologna', 'Stockholm', 'Gothenburg', 'Malmö', 'Minneapolis', 'Boston', 'New York', 'San Francisco', 'Austin')
 
 # Create empty vector for user counts
 user_counts <- vector()
