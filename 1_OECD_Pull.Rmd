@@ -1,0 +1,100 @@
+
+```{r include=FALSE}
+# Set working directory. Change as needed
+setwd('C:/Users/a6p/Desktop/Uni 2014/E1161 - Collaborative Research/Final Project/')
+```
+
+
+```{r}
+# Install packages to pull OECD data
+require("devtools")
+library("rsdmx")
+
+# Pull OECD city patent data
+dataURL <- "http://stats.oecd.org/restsdmx/sdmx.ashx/GetData/CITIES/DEU+DE001+DE002+DE003+DE007+DE035+DE507+ESP+ES001+ES002+FRA+FR001+ITA+IT001+IT002+IT009+SWE+SE001+SE002+SE003+USA+US014+US048+US084+US146+US234.PCT_INTENSITY?startTime=2000&endTime=2012"
+
+sdmx <- readSDMX(dataURL)
+city_pat <- as.data.frame(sdmx)
+
+# Clean table by deleting and renaming rows
+city_pat$VAR <- NULL # Delete columns
+city_pat$attrs.df <- NULL
+
+colnames(city_pat) <- c("METRO_ID" , "Year" , "Patent_Intensity") # Rename columns
+
+# Pull OECD GDP per capita data
+
+dataURL2 <- "http://stats.oecd.org/restsdmx/sdmx.ashx/GetData/CITIES/DEU+DE001+DE002+DE003+DE007+DE035+DE507+ESP+ES001+ES002+FRA+FR001+ITA+IT001+IT002+IT009+SWE+SE001+SE002+SE003+USA+US014+US048+US084+US146+US234.GDP_PC?startTime=2000&endTime=2012"
+
+sdmx <- readSDMX(dataURL2)
+city_gdp <- as.data.frame(sdmx)
+
+# Clean table by deleting and renaming rows
+city_gdp$VAR <- NULL # Delete columns
+city_gdp$attrs.df <- NULL
+
+colnames(city_gdp) <- c("METRO_ID" , "Year" , "GDP") # Rename columns
+
+# Pull OECD environmental data
+
+dataURL3 <- "http://stats.oecd.org/restsdmx/sdmx.ashx/GetData/CITIES/DEU+DE001+DE002+DE003+DE007+DE035+DE507+ESP+ES001+ES002+FRA+FR001+ITA+IT001+IT002+IT009+SWE+SE001+SE002+SE003+USA+US014+US048+US084+US146+US234.GREEN_AREA_PC?startTime=2000&endTime=2008"
+
+sdmx <- readSDMX(dataURL3)
+city_env <- as.data.frame(sdmx)
+
+# Clean table by deleting and renaming rows
+city_env$VAR <- NULL # Delete columns
+city_env$attrs.df <- NULL
+
+colnames(city_env) <- c("METRO_ID" , "Year" , "GreenArea") # Rename columns
+
+
+```
+
+```{r}
+# Merge all 3 OECD citydata sets
+
+oecd_pat_gdp <- merge(city_pat , city_gdp , by=c("METRO_ID" , "Year"))
+oecd <- merge(oecd_pat_gdp , city_env , by=c("METRO_ID" , "Year"))
+
+```
+
+
+
+```{r}
+
+# Clean city table, insert city and country names
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DEU" , "Germany")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE001" , "Berlin")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE002" , "Hamburg")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE003" , "Munich")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE007" , "Stuttgart")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE035" , "Karlsruhe")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE507" , "Aachen")
+
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "ESP" , "Spain")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "ES001" , "Madrid")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "ES002" , "Barcelona")
+
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "FRA" , "France")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "FR001" , "Paris")
+
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "ITA" , "Italy")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "IT001" , "Rome")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "IT002" , "Milan")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "IT009" , "Bologna")
+
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "SWE" , "Sweden")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "SE001" , "Stockholm")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "SE002" , "Gothenburg")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "SE003" , "Malmö")
+
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "USA" , "United States")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US014" , "Minneapolis")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US048" , "Boston")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US084" , "New York")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US146" , "San Francisco")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US234" , "Austin")
+
+```
+
