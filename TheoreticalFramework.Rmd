@@ -47,6 +47,11 @@ Since @freeman2009 among others called for the continuous improvement of innovat
 
 > Identification and sorting of intended data sources, their format, and overall plan for cleaning and analysis
 
+For examining open network data against patent data, this study uses patent at the city level, taken from the Organization for Economic Co-operation and Development, available at http://stats.oecd.org. Patent data was taken for 20 cities overall, ranging from six different countries, including their country level patent data, for general comparison.  Additional data taken from the OECD include GDP per capita data and environmental data, as other variables which could prove significant in explaining differences in innovation.
+
+This OECD data's format is in ( ).  To clean this data for effective statistical comparison, the deletion of several empty rows, and the renaming of relevant variables with their city name rather than an attributed code, for clarity.  Past this, all datasets must be effectively merged.
+
+
 **Preliminary Statistics**
 
 > Early statistical analysis findings and expected types of statistical analysis based upon nature of datasets used
