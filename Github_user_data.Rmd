@@ -1,9 +1,5 @@
-########################################
-# Download GitHub users with more than 100 followers for Berlin, Brooklyn, 
-# and London
-# Christopher Gandrud
-# 20 October 2014
-########################################
+
+*Download GitHub users with more than 100 followers for different locations*
 
 library(httr)
 library(plyr)
