@@ -1,4 +1,19 @@
-### Open vs. closed access to knowledge: Using online network data to measure innovation
+---
+title: "Open vs. Closed innovation: Using online network data to measure innovation"
+author: "Benjamin Snow and Olivery Bott"
+date: "24 October 2014"
+output:
+  html_document:
+    fig_caption: yes
+    number_sections: no
+  pdf_document:
+    fig_caption: yes
+    number_sections: yes
+bibliography:
+    - Packages.bib
+    - Main.bib
+---
+
 ============
 
 ## Introduction
