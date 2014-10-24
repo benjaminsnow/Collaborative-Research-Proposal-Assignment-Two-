@@ -1,6 +1,5 @@
-Assignment 2: Open vs. Closed Innovation
-===============================================
-# Benjamin Snow and Oliver Bott
+## Assignment 2: Open vs. Closed Innovation
+*Benjamin Snow and Oliver Bott*
 
 
 This is the repository for the 'Collaborative Social Science Data Analysis' course taught by @christophergandrud at the Hertie School of Governance.  This is the repository for Assignment 2, a proposal for the final research project.
