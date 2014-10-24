@@ -1,6 +1,6 @@
 ---
 title: "Open vs. Closed innovation: Using online network data to measure innovation"
-author: "Benjamin Snow and Olivery Bott"
+author: "Benjamin Snow and Oliver Bott"
 date: "24 October 2014"
 output:
   html_document:
