@@ -169,7 +169,7 @@ hist(oecd$Patent_Intensity,
 
 **Statistical Model**
 
-On the type of analysis and question, this study will use an ordinary least squares (OLS) model by using `plot` to examine the relationship between patent and open data. If there is a relationship this would presumably demonstrate that open data shows the same innovation patent data show, but shows the 'throughput' of innovation rather than the 'output'. Open data having a relationship to patent data would presumably show innovation as a throughput, since it is measured by people finding those contributing in open data as innovators (followers on github), rather than looking at the specific innovation at completion (patents).
+On the type of analysis and question, this study will use an ordinary least squares (OLS) model by using `plot` to examine the relationship between patent and open data. If there is a relationship this would presumably demonstrate that open data shows the same innovation patent data show, but shows the 'throughput' of innovation rather than the 'output'. Open data having a relationship to patent data would presumably show innovation as a throughput, since it is measured by people finding those contributing in open data as innovators (followers on github), rather than looking at the specific innovation at completion (patents). One limitation we are facing is that the patent data will not be up to date compared to the network data. Still we believe that a general comparison is possible and could lead to valid results.
 
 
 [^IUS]: For the latest edition see [http://ec.europa.eu/enterprise/policies/innovation/policy/innovation-scoreboard/index_en.htm].
