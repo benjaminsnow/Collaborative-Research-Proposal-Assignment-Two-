@@ -62,6 +62,11 @@ Despite these efforts, current developments in research indicate that „charact
 
 Since @freeman2009 among others called for the continuous improvement of innovation measurement, this work seeks to contribute to the refinement of innovation indicators. The purpose of this study is to explore the conceptual and statistical viability of a new metric by which we can measure innovation. New metrics are needed, because "too much energy has gone into squeezing the last bit of juice out of old data collected for different purposes relative to the design of new types of data" (Kenneth Arrow, quoted from Smith 2005, p. 148).
 
+**Research Question**
+
+In the light of the above mentioned state of innovation research we want to examine the following the following research question: 
+**To what extent can open innovation network data add to the measurement of innovation performance?**
+
 # Methodology
 
 For examining open network data against patent data, this study will rely on two data sets. One is the API data for open networks. Similar to other network studies we will be using the association of a contributor, but rather based around their reputation, and not their works citation level (**we have not written anything in the methods on API yet**).
@@ -144,40 +149,8 @@ transform(oecd, Year = as.numeric(Year))
 To further clean up the table we rename the city and country IDs.
 
 ```{r echo=FALSE}
-
-# Clean city table, insert city and country names
+# Example code to further clean table
 oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DEU" , "Germany")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE001" , "Berlin")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE002" , "Hamburg")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE003" , "Munich")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE007" , "Stuttgart")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE035" , "Karlsruhe")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE507" , "Aachen")
-
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "ESP" , "Spain")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "ES001" , "Madrid")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "ES002" , "Barcelona")
-
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "FRA" , "France")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "FR001" , "Paris")
-
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "ITA" , "Italy")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "IT001" , "Rome")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "IT002" , "Milan")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "IT009" , "Bologna")
-
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "SWE" , "Sweden")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "SE001" , "Stockholm")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "SE002" , "Gothenburg")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "SE003" , "Malmö")
-
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "USA" , "United States")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US014" , "Minneapolis")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US048" , "Boston")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US084" , "New York")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US146" , "San Francisco")
-oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US234" , "Austin")
-
 ```
 
 # Descriptive statistics
@@ -186,13 +159,13 @@ The characteristics of the city data obtained through the OECD database are show
 
 
 ```{r echo=FALSE}
+# Summary statistics for the three variables
 summary(oecd$Patent_Intensity ,  digits = 3)
 summary(oecd$GDP ,  digits = 3)
 summary(oecd$GreenArea ,  digits = 3) 
 ```
 
 In the data set, the mean for PCT patent application per 10,000 inhabitants is 3.44. The histogram indicates that the mean is not very meaningful. There are many cities with patent applications much lower and some cities with around 5.5 patent applications. This finding supports our claim that on the regional level there are great variations in patent activity, which undermines national level analyses.
-
 
 ```{r, echo=FALSE}
 hist(oecd$Patent_Intensity,
@@ -209,19 +182,7 @@ plot(oecd$Patent_Intensity , oecd$GDP,
       ylab = 'GDP per capita')
 ```
 
-A second histogram shows the relationship between green space available and patent intensity. The relationship seems stronger than with GDP.
-
-
-```{r, ECHO=FALSE}
-plot(oecd$Patent_Intensity , oecd$Grenarea, 
-      main = 'Patent intensity and GDP per capita',
-      xlab = 'PCT patent applications per 10,000 inhabitants',
-      ylab = 'Green space in square meters per inhabitant')
-```
-
 **Statistical Model**
-
-> What sort of model will likely be used
 
 On the type of analysis and question, this study will use an ordinary least squares (OLS) model to examine the relationship between patent and open data. If their is a relationship this would presumably show that open data shows the same innovation patent data show, but shows the 'throughput' of innovation rather than the 'output'. Open data having a relationship to patent data would presumably show innovation as a throughput, since it is measured by people finding those contributing in open data as innovators (followers on github), rather than looking at the specific innovation at completion (patents).  
 
@@ -230,10 +191,6 @@ On the type of analysis and question, this study will use an ordinary least squa
 
 > Early statistical analysis findings and expected types of statistical analysis based upon nature of datasets used
 
-
-## Research question
-- Does the anlaysis of research networks function as an indicator to measure local level innovation performance?
-- Is network analysis superior to patent analysis in order to measure innovation performance?
 
 [^IUS]: For the latest edition see [http://ec.europa.eu/enterprise/policies/innovation/policy/innovation-scoreboard/index_en.htm].
 [^STI]: For the latest edition see [http://www.oecd.org/sti/scoreboard.htm].
