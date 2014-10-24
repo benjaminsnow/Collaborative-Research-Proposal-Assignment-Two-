@@ -57,6 +57,12 @@ This OECD data's format is in ( ).  To clean this data for effective statistical
 
 To examine open data innovation, data was obtained from the Application Programming Interface (commonly known as an API) of the git repository web-based hosting service Github (Github.com). Github's use of distributed revision control and source code management make it a commonly used software development collaboration tool. The ability to see 
 
+**Statistical Model**
+
+> What sort of model will likely be used
+
+On the type of analysis and question, this study will use an ordinary least squares (OLS) model to examine the relationship between patent and open data. If their is a relationship this would presumably show that open data shows the same innovation patent data show, but shows the 'throughput' of innovation rather than the 'output'. Open data having a relationship to patent data would presumably show innovation as a throughput, since it is measured by people finding those contributing in open data as innovators (followers on github), rather than looking at the specific innovation at completion (patents).  
+
 
 **Preliminary Statistics**
 
