@@ -1,5 +1,5 @@
 
-*Download GitHub users with more than 100 followers for different locations*
+# Download GitHub users with more than 100 followers for different locations
 
 library(httr)
 library(plyr)
