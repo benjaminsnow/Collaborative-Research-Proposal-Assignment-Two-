@@ -14,8 +14,6 @@ bibliography:
     - Main.bib
 ---
 
-============
-
 ```{r include=FALSE}
 # Set working directory. Change as needed
 setwd('C:/Users/a6p/Desktop/Uni 2014/E1161 - Collaborative Research/Final Project/')
@@ -33,9 +31,9 @@ repmis::LoadandCite(PackagesUsed, file = "Packages.bib", install = FALSE)
 
 ## Introduction
 
-Policy makers worldwide have a profound interest in innovation for its significance for economic development and prospertiy. @taylor2004 views innovation as "the driving force behind modern economic growth, relative industrial power, and competitive advantage" (p.222). Numerous studies, for example the Innovation Union Scoreboard[^IUS] and the OECD Science, Technology and Innovation Scoreboard[^STI], have attempted to measure and compare the innovation performance on the national level.  However, until today most examinations of innovation have put their analytical emphasis on national level patent data, relying on this form of registering of proprietary data as a means of measuring innovation.  This leaves largely unexplored other, more open measures of innovation. The relatively recent emergence of network-based research systems offer new and potentially more instructive metrics by which to measure innovation, compared to protected closed knowledge. 
+Policy makers worldwide have a profound interest in innovation for its significance for economic development and prosperity. @taylor2004 views innovation as "the driving force behind modern economic growth, relative industrial power, and competitive advantage" (p.222). Numerous studies, for example the Innovation Union Scoreboard[^IUS] and the OECD Science, Technology and Innovation Scoreboard[^STI], have attempted to measure and compare the innovation performance on the national level.  However, until today most examinations of innovation have put their analytical emphasis on national level patent data, relying on this form of registering of proprietary data as a means of measuring innovation.  This leaves largely unexplored other, more open measures of innovation. The relatively recent emergence of network-based research systems offer new and potentially more instructive metrics by which to measure innovation, compared to protected closed knowledge. 
 
-This research project examines the potential preferability of using collaborative online network data on the city-level as an innovation indicator. By doing so, this work will critically assess current innovation indicators in the hope of offering new alternatives for measuring and understanding innovation. Since @freeman2009, among other scholars, called for the continuous improvement of innovation measurement, this work seeks to go beyond the widespread use of patent data to contribute to the refinement of innovation indicators, and the field as a whole.
+This research project examines the potential preferability of using collaborative online network data on the city-level as an innovation indicator. By doing so, this work will critically assess current innovation indicators in the hope of offering new alternatives for measuring and understanding innovation. Since various scholars, called for the continuous improvement of innovation measurement [see for example @freeman2009], this work seeks to go beyond the widespread use of patent data to contribute to the refinement of innovation indicators, and the field as a whole.
 
 ## State of the Field
 
