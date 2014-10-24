@@ -1,5 +1,5 @@
 ---
-title: "Open vs. closed innovation: Using online network data to measure innovation"
+title: "Open vs. closed innovation: using online network data to measure innovation"
 author: "Benjamin Snow and Oliver Bott"
 date: "24 October 2014"
 output:
@@ -21,22 +21,14 @@ bibliography:
 setwd('C:/Users/a6p/Desktop/Uni 2014/E1161 - Collaborative Research/Final Project/')
 
 # Load packages and create BibTeX file
-# Note: must have rsdmx, httr, dplyr and rjson package installed
+# Note: must have repmis, rsdmx, httr, dplyr and rjson packages installed
 PackagesUsed <- c("ggplot2", "repmis", "rsdmx", "httr", "dplyr", "rjson")
 
 # Load PackagesUsed and create .bib BibTeX file
-# Note: must have repmis package installed.
 repmis::LoadandCite(PackagesUsed, file = "Packages.bib", install = FALSE)
-
-
 ```
 
-```{r include=FALSE}
-# Install packages to pull OECD data
-# Note must have devtools package installed.
-require("devtools")
-library("rsdmx")
-```
+
 
 
 ## Introduction
@@ -82,6 +74,13 @@ The first data set is obtained by using the Application Programming Interface (c
 First we will create location vectors for different cities with the `locations` code. By doing so, we will identify different open innovation clusters, for example Berlin, New York and San Francisco. In addition, we use the `vector()` code to get information on user counts, focusing on repositories with more than 20 or so followers. By combining locations and user counts data by using `data.frame()`, we will be able to construct data sets for different location clusters and user count numbers.
 
 **Closed innovation OECD patent data**
+
+```{r include=FALSE}
+# Install packages to pull OECD data
+# Note must have devtools package installed.
+require("devtools")
+library("rsdmx")
+```
 
 For closed innovation we use patent at the city level, taken from the Organization for Economic Co-operation and Development[^OECD]. Patent data was taken for a preliminary sample of 20 cities overall, ranging from six different countries, including their country level patent data, for general comparison over the time period 2000 until 2012.  From the same database, we also use GDP per capita data and environmental data, as other variables which could prove significant in explaining differences in innovation.
 
