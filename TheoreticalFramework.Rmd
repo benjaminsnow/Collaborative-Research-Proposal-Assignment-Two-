@@ -29,27 +29,6 @@ require("devtools")
 library("rsdmx")
 ```
 
-```{r include=FALSE}
-# Pull OECD city patent data
-dataURL <- "http://stats.oecd.org/restsdmx/sdmx.ashx/GetData/CITIES/DEU+DE001+DE002+DE003+DE007+DE035+DE507+ESP+ES001+ES002+FRA+FR001+ITA+IT001+IT002+IT009+SWE+SE001+SE002+SE003+USA+US014+US048+US084+US146+US234.PCT_INTENSITY?startTime=2000&endTime=2012"
-
-sdmx <- readSDMX(dataURL)
-city_pat <- as.data.frame(sdmx)
-
-# Pull OECD GDP per capita data
-
-dataURL2 <- "http://stats.oecd.org/restsdmx/sdmx.ashx/GetData/CITIES/DEU+DE001+DE002+DE003+DE007+DE035+DE507+ESP+ES001+ES002+FRA+FR001+ITA+IT001+IT002+IT009+SWE+SE001+SE002+SE003+USA+US014+US048+US084+US146+US234.GDP_PC?startTime=2000&endTime=2012"
-
-sdmx <- readSDMX(dataURL2)
-city_gdp <- as.data.frame(sdmx)
-
-# Pull OECD environmental data
-
-dataURL3 <- "http://stats.oecd.org/restsdmx/sdmx.ashx/GetData/CITIES/DEU+DE001+DE002+DE003+DE007+DE035+DE507+ESP+ES001+ES002+FRA+FR001+ITA+IT001+IT002+IT009+SWE+SE001+SE002+SE003+USA+US014+US048+US084+US146+US234.GREEN_AREA_PC?startTime=2000&endTime=2008"
-
-sdmx <- readSDMX(dataURL3)
-city_env <- as.data.frame(sdmx)
-```
 
 ## Introduction
 
@@ -96,6 +75,29 @@ To examine open data innovation, data was obtained from the Application Programm
 We obtain the patent data on the city level from the OECD database. The R [@CiteR] package [@RSDMX] necessary for obtaining the OECD dataset (see above).
 
 In the next step we pull the OECD data from the online database using [@RSDMX]. As we are interested in patent data, we work with data indicating the PCT patent applications per 10,000 inhabitants. As control variables we also use GDP per capita and green space available per inhabitant in square meters per inhabitant (see above).
+
+```{r include=FALSE}
+# Pull OECD city patent data
+dataURL <- "http://stats.oecd.org/restsdmx/sdmx.ashx/GetData/CITIES/DEU+DE001+DE002+DE003+DE007+DE035+DE507+ESP+ES001+ES002+FRA+FR001+ITA+IT001+IT002+IT009+SWE+SE001+SE002+SE003+USA+US014+US048+US084+US146+US234.PCT_INTENSITY?startTime=2000&endTime=2012"
+
+sdmx <- readSDMX(dataURL)
+city_pat <- as.data.frame(sdmx)
+
+# Pull OECD GDP per capita data
+
+dataURL2 <- "http://stats.oecd.org/restsdmx/sdmx.ashx/GetData/CITIES/DEU+DE001+DE002+DE003+DE007+DE035+DE507+ESP+ES001+ES002+FRA+FR001+ITA+IT001+IT002+IT009+SWE+SE001+SE002+SE003+USA+US014+US048+US084+US146+US234.GDP_PC?startTime=2000&endTime=2012"
+
+sdmx <- readSDMX(dataURL2)
+city_gdp <- as.data.frame(sdmx)
+
+# Pull OECD environmental data
+
+dataURL3 <- "http://stats.oecd.org/restsdmx/sdmx.ashx/GetData/CITIES/DEU+DE001+DE002+DE003+DE007+DE035+DE507+ESP+ES001+ES002+FRA+FR001+ITA+IT001+IT002+IT009+SWE+SE001+SE002+SE003+USA+US014+US048+US084+US146+US234.GREEN_AREA_PC?startTime=2000&endTime=2008"
+
+sdmx <- readSDMX(dataURL3)
+city_env <- as.data.frame(sdmx)
+```
+
 
 In the next step basic cleaning of the data is undertaken.
 
