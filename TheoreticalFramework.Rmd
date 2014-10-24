@@ -94,7 +94,7 @@ Similarly, for this study we will be using the association of a contributor, but
 
 Since @freeman2009 among others called for the continuous improvement of innovation measurement, this work seeks to contribute to the refinement of innovation indicators. The purpose of this study is to explore the conceptual and statistical viability of a new metric by which we can measure innovation. New metrics are needed, because "too much energy has gone into squeezing the last bit of juice out of old data collected for different purposes relative to the design of new types of data" (Kenneth Arrow, quoted from Smith 2005, p. 148).
 
-**Intended Data Sources**
+**Data Sources, Cleaning, and Preliminary Statistics**
 
 > Identification and sorting of intended data sources, their format, and overall plan for cleaning and analysis
 
@@ -103,6 +103,128 @@ For examining open network data against patent data, this study uses patent at t
 This OECD data's format is in ( ).  To clean this data for effective statistical comparison, the deletion of several empty rows, and the renaming of relevant variables with their city name rather than an attributed code, for clarity.  Past this, all datasets must be effectively merged.
 
 To examine open data innovation, data was obtained from the Application Programming Interface (commonly known as an API) of the git repository web-based hosting service Github (Github.com). Github's use of distributed revision control and source code management make it a commonly used software development collaboration tool. The ability to see 
+
+We obtain the patent data on the city level from the OECD database. The R [@CiteR] package [@RSDMX] necessary for obtaining the OECD dataset (see above).
+
+In the next step we pull the OECD data from the online database using [@RSDMX]. As we are interested in patent data, we work with data indicating the PCT patent applications per 10,000 inhabitants. As control variables we also use GDP per capita and green space available per inhabitant in square meters per inhabitant (see above).
+
+In the next step basic cleaning of the data is undertaken.
+# Clean table by deleting and renaming rows
+city_pat$VAR <- NULL # Delete columns
+city_pat$attrs.df <- NULL
+
+colnames(city_pat) <- c("METRO_ID" , "Year" , "Patent_Intensity") # Rename columns
+
+# Clean table by deleting and renaming rows
+city_gdp$VAR <- NULL # Delete columns
+city_gdp$attrs.df <- NULL
+
+colnames(city_gdp) <- c("METRO_ID" , "Year" , "GDP") # Rename columns
+
+sdmx <- readSDMX(dataURL3)
+city_env <- as.data.frame(sdmx)
+
+# Clean table by deleting and renaming rows
+city_env$VAR <- NULL # Delete columns
+city_env$attrs.df <- NULL
+
+colnames(city_env) <- c("METRO_ID" , "Year" , "GreenArea") # Rename columns
+
+```
+
+After cleaning the data frames and sorting the data, we merge the three data sets into one using the following code: 
+
+
+```{r echo=TRUE}
+# Merge all 3 OECD citydata sets
+
+oecd_pat_gdp <- merge(city_pat , city_gdp , by=c("METRO_ID" , "Year"))
+oecd <- merge(oecd_pat_gdp , city_env , by=c("METRO_ID" , "Year"))
+```
+
+```{r include=FALSE}
+# Turn Year into numeric
+sapply(oecd, mode)
+transform(oecd, Year = as.numeric(Year))
+```
+
+To further clean up the table we rename the city and country IDs.
+
+```{r echo=FALSE}
+
+# Clean city table, insert city and country names
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DEU" , "Germany")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE001" , "Berlin")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE002" , "Hamburg")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE003" , "Munich")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE007" , "Stuttgart")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE035" , "Karlsruhe")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DE507" , "Aachen")
+
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "ESP" , "Spain")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "ES001" , "Madrid")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "ES002" , "Barcelona")
+
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "FRA" , "France")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "FR001" , "Paris")
+
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "ITA" , "Italy")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "IT001" , "Rome")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "IT002" , "Milan")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "IT009" , "Bologna")
+
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "SWE" , "Sweden")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "SE001" , "Stockholm")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "SE002" , "Gothenburg")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "SE003" , "Malmö")
+
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "USA" , "United States")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US014" , "Minneapolis")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US048" , "Boston")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US084" , "New York")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US146" , "San Francisco")
+oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "US234" , "Austin")
+
+```
+
+# Descriptive statistics
+
+The characteristics of the city data obtained through the OECD database are shown in this section. The summary statistics give some first impression of the OECD city data set.
+
+
+```{r echo=FALSE}
+summary(oecd$Patent_Intensity ,  digits = 3)
+summary(oecd$GDP ,  digits = 3)
+summary(oecd$GreenArea ,  digits = 3) 
+```
+
+In the data set, the mean for PCT patent application per 10,000 inhabitants is 3.44. The histogram indicates that the mean is not very meaningful. There are many cities with patent applications much lower and some cities with around 5.5 patent applications. This finding supports our claim that on the regional level there are great variations in patent activity, which undermines national level analyses.
+
+
+```{r, echo=FALSE}
+hist(oecd$Patent_Intensity,
+      main = 'PCT applications',
+      xlab = 'PCT patent applications per 10,000 inhabitants')
+```
+
+The histogram indicates the relationship between GDP and patent intensity. 
+
+```{r, echo=FALSE}
+plot(oecd$Patent_Intensity , oecd$GDP, 
+      main = 'Patent intensity and GDP per capita',
+      xlab = 'PCT patent applications per 10,000 inhabitants',
+      ylab = 'GDP per capita')
+```
+
+A second histogram shows the relationship between green space available and patent intensity. The relationship seems stronger than with GDP.
+
+
+```{r, ECHO=FALSE}
+plot(oecd$Patent_Intensity , oecd$Grenarea, 
+      main = 'Patent intensity and GDP per capita',
+      xlab = 'PCT patent applications per 10,000 inhabitants',
+      ylab = 'Green space in square meters per inhabitant')
+```
 
 **Statistical Model**
 
