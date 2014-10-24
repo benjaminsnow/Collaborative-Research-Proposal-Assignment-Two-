@@ -148,7 +148,7 @@ To further clean up the table we rename the city and country IDs using this code
 oecd$METRO_ID <- replace(oecd$METRO_ID , oecd$METRO_ID == "DEU" , "Germany")
 ```
 
-**Descriptive Statistics**
+**Descriptive Statistics of OECD data set**
 
 To give a brief overview of the OECD data already obtained, the summary statistics give some first impression of the OECD city data set.
 
@@ -172,12 +172,9 @@ hist(oecd$Patent_Intensity,
 On the type of analysis and question, this study will use an ordinary least squares (OLS) model by using `plot` to examine the relationship between patent and open data. If there is a relationship this would presumably demonstrate that open data shows the same innovation patent data show, but shows the 'throughput' of innovation rather than the 'output'. Open data having a relationship to patent data would presumably show innovation as a throughput, since it is measured by people finding those contributing in open data as innovators (followers on github), rather than looking at the specific innovation at completion (patents).
 
 
-**Preliminary Statistics**
-
-> Early statistical analysis findings and expected types of statistical analysis based upon nature of datasets used
-
-
 [^IUS]: For the latest edition see [http://ec.europa.eu/enterprise/policies/innovation/policy/innovation-scoreboard/index_en.htm].
 [^STI]: For the latest edition see [http://www.oecd.org/sti/scoreboard.htm].
 [^OECD]: Online accessible on [http://stats.oecd.org].
 [^GIT]: Online accessilbe on [https://github.com/].
+
+# References
