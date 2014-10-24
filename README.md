@@ -9,10 +9,10 @@ The assignment calls for: justifying why the topic of study is interesting, prov
 
 The proposal can be found in the Proposal.Rmd file and is structured as follows:
 
-1. Introduction
+1. Introduction 
 2. State of the Field
 3. Methodology
 4. Relevance
-4. References 
+5. References 
 
 The proposal includes dynamically linked academic references (see Main.bib) and citations for R packages (see Packages.bib).
