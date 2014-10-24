@@ -1,5 +1,5 @@
 ---
-title: "Open vs. Closed innovation: Using online network data to measure innovation"
+title: "Open vs. closed innovation: Using online network data to measure innovation"
 author: "Benjamin Snow and Oliver Bott"
 date: "24 October 2014"
 output:
@@ -58,15 +58,15 @@ Both data on patents and academic publishing include only proprietary or closed 
 
 Despite these efforts, current developments in research indicate that „characteristics that were important last century may well no longer be so relevant today and indeed may even be positively misleading“ [@freeman2009, 3]. Today we witness a shift away from the belief that innovation only occurs in professional R&D labs, a change towards what @freeman2009 calls "research without frontiers" (p.13). Even though networks and research collaborations become increasingly important, there have been relatively few studies focusing on network data [see for example @breschi2005]. Even where research networks have been analysed, the focus is too often on economically useful knowledge [see @acs2002]. Other studies focusing on research networks focus on other protected collaborative networks [see @ponds2010].
 
-Similarly, for this study we will be using the association of a contributor, but rather based around their reputation, and not their works citation level (**THIS SHOULD GO INTO DESIGN**).
-
 **Using Network Data as Innovation Indicator**
 
 Since @freeman2009 among others called for the continuous improvement of innovation measurement, this work seeks to contribute to the refinement of innovation indicators. The purpose of this study is to explore the conceptual and statistical viability of a new metric by which we can measure innovation. New metrics are needed, because "too much energy has gone into squeezing the last bit of juice out of old data collected for different purposes relative to the design of new types of data" (Kenneth Arrow, quoted from Smith 2005, p. 148).
 
 # Methodology
 
-For examining open network data against patent data, this study uses patent at the city level, taken from the Organization for Economic Co-operation and Development[^OECD]. Patent data was taken for a preliminary sample of 20 cities overall, ranging from six different countries, including their country level patent data, for general comparison over the time period 2000 until 2012.  Additional data taken from the OECD include GDP per capita data and environmental data, as other variables which could prove significant in explaining differences in innovation.
+For examining open network data against patent data, this study will rely on two data sets. One is the API data for open networks. Similar to other network studies we will be using the association of a contributor, but rather based around their reputation, and not their works citation level (**we have not written anything in the methods on API yet**).
+
+For closed innovation we use patent at the city level, taken from the Organization for Economic Co-operation and Development[^OECD]. Patent data was taken for a preliminary sample of 20 cities overall, ranging from six different countries, including their country level patent data, for general comparison over the time period 2000 until 2012.  From the same database, we also use GDP per capita data and environmental data, as other variables which could prove significant in explaining differences in innovation.
 
 This OECD data's format is in ( ).  To clean this data for effective statistical comparison, the deletion of several empty rows, and the renaming of relevant variables with their city name rather than an attributed code, for clarity.  Past this, all datasets must be effectively merged.
 
