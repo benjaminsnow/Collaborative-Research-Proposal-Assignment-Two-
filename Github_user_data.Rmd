@@ -1,6 +1,7 @@
 
 # Download GitHub users with more than 100 followers for different locations
 
+```{r}
 library(httr)
 library(plyr)
 library(rjson)
@@ -33,3 +34,4 @@ for (i in locations){
 
 # Combine locations and user counts data
 location_counts <- data.frame(locations, user_counts)
+```
