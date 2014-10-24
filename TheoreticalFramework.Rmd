@@ -64,13 +64,19 @@ Technological advances related to the increasing use of the internet and open re
 
 # Methodology
 
-For examining open network data against patent data, this study will rely on two data sets. One is the API data for open networks. Similar to other network studies we will be using the association of a contributor, but rather based around their reputation, and not their works citation level (**we have not written anything in the methods on API yet**).
+To examin open network data against patent data, this study will rely largely on two data sets.
+
+**API network data**
+
+The first data set is obtained by using the Application Programming Interface (commonly known as an API) data for open networks. To examine open data innovation, data will be obtained from the the git repository web-based hosting service GitHub[^GIT]. GitHub is a web-based hosting serivce used for collaborative research, allowing researchers to simultaneously work on projects. Its use of distributed revision control and source code management make it a commonly used software development collaboration tool. Since most of the repositories are openly accessible we can use API tools to track the popularity of repositories. The R package [WHICH PACKAGES] allow us to compile data on the number and locations of users of different repositories. Hence, similar to other network studies, we will be using the association of a contributor, but rather based around their reputation.
+
+**Closed innovation OECD patent data**
 
 For closed innovation we use patent at the city level, taken from the Organization for Economic Co-operation and Development[^OECD]. Patent data was taken for a preliminary sample of 20 cities overall, ranging from six different countries, including their country level patent data, for general comparison over the time period 2000 until 2012.  From the same database, we also use GDP per capita data and environmental data, as other variables which could prove significant in explaining differences in innovation.
 
-This OECD data's format is in ( ).  To clean this data for effective statistical comparison, the deletion of several empty rows, and the renaming of relevant variables with their city name rather than an attributed code, for clarity.  Past this, all datasets must be effectively merged.
+This OECD data's format is mainly numeric.  To clean this data for effective statistical comparison, the deletion of several empty rows, and the renaming of relevant variables with their city name rather than an attributed code, for clarity.  Past this, all datasets must be effectively merged.
 
-To examine open data innovation, data was obtained from the Application Programming Interface (commonly known as an API) of the git repository web-based hosting service Github[^GIT]. Github's use of distributed revision control and source code management make it a commonly used software development collaboration tool. The ability to see 
+ The ability to see 
 
 We obtain the patent data on the city level from the OECD database. The R [@CiteR] package [@RSDMX] necessary for obtaining the OECD dataset (see above).
 
