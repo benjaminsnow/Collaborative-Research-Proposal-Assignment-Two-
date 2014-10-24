@@ -15,3 +15,17 @@ The proposal can be found in the Proposal.Rmd file and is structured as follows:
 4. References 
 
 The proposal includes dynamically linked academic references (see Main.bib) and citations for R packages (see Packages.bib).
+
+#### Proposal File
+The project proposal can be found in Proposal.Rmd.  
+
+#### Other Repository Files
+- the Data folder contains a file with early OECD data and Github data
+- License is a basic MIT license for the project
+- Main.bib is the main bibliographic file which is dynamically linked to Proposal.Rmd
+- Packages.bib is a bibliographic file dynamically linked to Proposal.Rmd with citations for R and R packages
+- README.MD is the file for the file currently being read, which offers introduction and context to the project, as interestingly as possible
+
+
+#### Contact
+Comments and feedback are encouraged, and can be sent to [Benjamin Snow](mailto: benjamin.aaron.snow@gmail.com(benjamin.aaron.snow@gmail.com)) or [Oliver Bott](mailto:o.bott@mpp.hertie-school.org(o.bott@mpp.hertie-school.org)).
