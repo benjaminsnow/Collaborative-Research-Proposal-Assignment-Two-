@@ -1,17 +1,17 @@
 ---
-title: "Open vs. closed innovation: using online network data to measure innovation"
+title: 'Open vs. closed innovation: using online network data to measure innovation'
 author: "Benjamin Snow and Oliver Bott"
 date: "24 October 2014"
 output:
-  html_document:
-    fig_caption: yes
-    number_sections: no
   pdf_document:
     fig_caption: yes
     number_sections: yes
+  html_document:
+    fig_caption: yes
+    number_sections: no
 bibliography:
-    - Packages.bib
-    - Main.bib
+- Packages.bib
+- Main.bib
 ---
 
 ```{r include=FALSE}
